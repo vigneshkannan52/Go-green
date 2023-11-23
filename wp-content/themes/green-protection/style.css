@@ -1,0 +1,256 @@
+/*
+Theme Name: Green Protection
+Template: bizberg
+Text Domain: green-protection
+Author: Bizberg Themes
+Author URI: https://bizbergthemes.com/ 
+Theme URI: https://bizbergthemes.com/downloads/green-protection/
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Description: Introducing Green Protection, a modern and clean WordPress theme designed for eco-nature websites. Ideal for nature-focused organizations, non-profits, and NGOs, Green Protection enables you to create a website that showcases your passion for the environment. With its user-friendly interface, responsive design, and compatibility with Elementor, building a custom and impactful site is effortless. Get started today and promote your cause with Green Protection, the reliable and easy-to-use WordPress theme for your eco-nature website.
+Tags: custom-logo,custom-menu,featured-images,threaded-comments,translation-ready,left-sidebar,right-sidebar,grid-layout,theme-options,blog,news,portfolio
+Version: 0.4
+Requires PHP: 5.6
+Tested up to: 6.2
+*/
+
+.navbar-default .navbar-nav > li > a {
+    letter-spacing: 0;
+}
+
+.blog-lists.blog-nosidebar-1 .blog-listing.no-sidebars .blog-post.blog-large .entry-header {
+    margin-top: 0 !important;
+}
+
+.about_us{
+	padding:80px 0;
+}
+
+.about_us_wrapper{
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about_us_wrapper .title_wrapper{
+	display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.about_us_wrapper .title_wrapper h3,
+.call_to_action .col.left h3{
+	font-family: 'Lato';
+	font-weight:400;
+	font-size:15px;
+	color:#000;
+	text-transform:uppercase;
+}
+
+.about_us_wrapper .title_wrapper h2,
+.call_to_action .col.left h2{
+	font-family: 'Lato';
+	font-weight:900;
+	color:#000;
+	font-size:40px;
+}
+
+.about_us_wrapper .icon_list .list {
+        display: flex;
+    align-items: center;
+}
+
+.about_us_wrapper .icon_list .list .icon i{
+    font-size: 30px;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    line-height: 58px;
+    text-align: center;
+}
+
+.about_us_wrapper .icon_list .list .icon{
+    background: #6ab43e;
+    border-radius: 77px;
+    margin-right: 20px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 54px;
+}
+
+.about_us_wrapper .col.left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    padding-right: 100px;
+}
+
+.about_us_wrapper .icon_list .content h4{
+	font-family: 'Lato';
+    color: #000;
+    font-weight: 700;
+}
+
+.about_us_wrapper .icon_list .list .content{
+	    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+}
+
+.about_us_wrapper .icon_list{
+	row-gap: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about_us_wrapper .col.right{
+	border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #eee;
+}
+
+section.call_to_action {
+    background: #f4f8f0;
+    padding: 80px 0;
+    margin-bottom: 50px;
+}
+
+.call_to_action_wrapper {
+    grid-template-columns: 2fr 3fr;
+    display: grid;
+	column-gap:30px;
+}
+
+.call_to_action_wrapper .col.left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    justify-content: center;
+}
+
+.call_to_action_wrapper .col.left .title_wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.call_to_action_wrapper .col.left .button{
+	display:inline-flex;
+	padding-top:5px;
+}
+
+.call_to_action_wrapper .col.left .button a{
+    padding: 11px 30px 12px;
+    background: green;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Lato';
+    text-transform: uppercase;
+    font-size: 12px;	
+}
+
+.call_to_action_wrapper .col.left .button a:hover{
+	background:#000;
+}
+
+.call_to_action_wrapper .col.right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+	column-gap: 30px;
+}
+
+.call_to_action_wrapper .col.right .card{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+	row-gap:15px;
+	padding:90px 60px;
+	border-radius:10px;
+}
+
+.call_to_action_wrapper .col.right .card i{
+	font-size:50px;
+	padding-bottom:10px;
+}
+
+.call_to_action_wrapper .col.right .card h3{
+	    color: #fff;
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.call_to_action_wrapper .col.right .card a{
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 1px solid;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+	padding-top:10px;
+}
+
+.call_to_action_wrapper .col.right .card p{
+	    line-height: 24px;
+}
+
+@media (max-width: 991px){
+    .about_us_wrapper {
+        grid-template-columns: 1fr;
+    }
+    .about_us_wrapper .col.left {
+        padding-right: 0;
+    }
+    .about_us_wrapper .title_wrapper {
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .about_us_wrapper .icon_list .list .icon {
+        width: 65px;
+    }
+    .call_to_action_wrapper {
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
+    .call_to_action_wrapper .col.left {
+        align-items: center;
+    }
+    .call_to_action_wrapper .col.left .title_wrapper {
+        align-items: center;
+        text-align: center;
+    }
+    .call_to_action_wrapper .col.left p{
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 500px){
+
+    .about_us_wrapper .icon_list .list .icon {
+        width: 162px;
+    }
+
+    .about_us_wrapper .icon_list {
+        padding: 0 20px;
+    }
+
+    .call_to_action_wrapper .col.right {
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+    }
+
+}
